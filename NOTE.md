@@ -1,0 +1,1 @@
+ # Dataset Note The dataset used in this project (`creditcard.csv`, ~144MB) is too large to host directly on GitHub. Download it here: [Kaggle — Credit Card Fraud Detection](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud) After downloading, place `creditcard.csv` in the project root directory before running `fraud_detection.ipynb`.
