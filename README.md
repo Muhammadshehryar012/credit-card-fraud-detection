@@ -46,6 +46,23 @@ project.
 lower precision (66.7% vs 98.0%) — the right choice depends on whether
 missed fraud or false alarms are costlier for a given deployment.
 
+## Exploratory Data Analysis
+
+**Class distribution** — fraud makes up just 0.17% of transactions, invisible on a linear scale:
+
+![Class Distribution](./class_distribution_logscale.png)
+
+**Transaction amount by class** — fraudulent transactions skew toward smaller amounts (median $9.25 vs $22.00 legitimate):
+
+![Amount by Class](./amount_by_class.png)
+
+**Fraud rate by hour** — fraud rate is not uniform throughout the day, rising during overnight hours:
+
+![Fraud by Hour](./fraud_by_hour.png)
+
+**Most discriminative V features** — the top 10 PCA components separate fraud from legitimate transactions most cleanly:
+
+![V Feature Boxplots](./vfeature_boxplots.png)
 ## Precision-Recall Curve
 
 ![Precision-Recall Curve](./precision_recall_curve.png)
